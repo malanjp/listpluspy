@@ -64,6 +64,19 @@ class List(list):
         self.__setitem__(idx1, self.__getitem__(idx2))
         self.__setitem__(idx2, tmp)
 
+    def length(self):
+        """
+        >>> l = List([1, 2, 3, 4, 5])
+        >>> print l.length()
+        5
+        >>> from random import randint
+        >>> generate_count = randint(0, 1000)
+        >>> l = List([x for x in range(0, generate_count)])
+        >>> l.length() == generate_count
+        True
+        """
+        return len(self)
+
 
 if __name__ == '__main__':
     import doctest
