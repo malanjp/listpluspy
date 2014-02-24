@@ -3,7 +3,7 @@ ListPlus.py
 
 ## Overview
 
-ListPlusPy is Scala like list class library for Python.
+ListPlus.py is Scala like list class library for Python.
 
 ### Usage
 
