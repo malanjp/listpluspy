@@ -5,6 +5,9 @@ ListPlus.py
 
 ListPlus.py is Scala like list class library for Python.
 
+### Requirements
+Python >= 3.3.2
+
 ### Usage
 
 ```python
