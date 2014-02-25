@@ -67,6 +67,16 @@ Python >= 3.3.2
 ['c', 'b', 'a']
  ```
 
+#### forall
+
+```python
+>>> l = List(range(1, 5))
+>>> l.forall('_ > 0')
+True
+>>> l.forall('_ > 3')
+False
+```
+
 ### Properties
 
 #### length
