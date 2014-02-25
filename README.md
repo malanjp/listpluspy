@@ -56,6 +56,7 @@ Python >= 3.3.2
 ```python
 >>> l = List(range(1, 5))
 >>> l.get(1)
+2
 ```
 
 #### swap
