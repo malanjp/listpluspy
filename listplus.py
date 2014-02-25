@@ -4,42 +4,6 @@ class List(list):
     """
     Methods
     """
-    def head(self):
-        """
-        >>> l = List(range(1, 5))
-        >>> l.head()
-        1
-        """
-        return self[0]
-
-    def tail(self):
-        """
-        >>> l = List(range(1, 5))
-        >>> l.tail()
-        [2, 3, 4]
-        >>> l.tail().tail().tail()
-        [4]
-        >>> l.tail().tail().tail().tail()
-        []
-        """
-        return List(self[1:])
-
-    def init(self):
-        """
-        >>> l = List(range(1, 5))
-        >>> l.init()
-        [1, 2, 3]
-        """
-        return List(self[0:-1])
-
-    def last(self):
-        """
-        >>> l = List(range(1, 5))
-        >>> l.last()
-        4
-        """
-        return self[-1]
-
     def get(self, index, default=None):
         """
         >>> l = List(range(1, 5))
@@ -85,6 +49,46 @@ class List(list):
     """
     Properties
     """
+    @property
+    def head(self):
+        """
+        >>> l = List(range(1, 5))
+        >>> l.head()
+        1
+        """
+        return self[0]
+
+    @property
+    def tail(self):
+        """
+        >>> l = List(range(1, 5))
+        >>> l.tail()
+        [2, 3, 4]
+        >>> l.tail().tail().tail()
+        [4]
+        >>> l.tail().tail().tail().tail()
+        []
+        """
+        return List(self[1:])
+
+    @property
+    def init(self):
+        """
+        >>> l = List(range(1, 5))
+        >>> l.init()
+        [1, 2, 3]
+        """
+        return List(self[0:-1])
+
+    @property
+    def last(self):
+        """
+        >>> l = List(range(1, 5))
+        >>> l.last()
+        4
+        """
+        return self[-1]
+
     @property
     def length(self):
         """
