@@ -101,6 +101,15 @@ class List(list):
         """
         return len(self)
 
+    @property
+    def size(self):
+        """
+        >>> l = List([1, 2, 3, 4, 5])
+        >>> print(l.size)
+        5
+        """
+        return self.length
+
 
 if __name__ == '__main__':
     import doctest
