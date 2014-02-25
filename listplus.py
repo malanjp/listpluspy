@@ -53,7 +53,7 @@ class List(list):
     def head(self):
         """
         >>> l = List(range(1, 5))
-        >>> l.head()
+        >>> l.head
         1
         """
         return self[0]
@@ -62,11 +62,11 @@ class List(list):
     def tail(self):
         """
         >>> l = List(range(1, 5))
-        >>> l.tail()
+        >>> l.tail
         [2, 3, 4]
-        >>> l.tail().tail().tail()
+        >>> l.tail.tail.tail
         [4]
-        >>> l.tail().tail().tail().tail()
+        >>> l.tail.tail.tail.tail
         []
         """
         return List(self[1:])
@@ -75,7 +75,7 @@ class List(list):
     def init(self):
         """
         >>> l = List(range(1, 5))
-        >>> l.init()
+        >>> l.init
         [1, 2, 3]
         """
         return List(self[0:-1])
@@ -84,7 +84,7 @@ class List(list):
     def last(self):
         """
         >>> l = List(range(1, 5))
-        >>> l.last()
+        >>> l.last
         4
         """
         return self[-1]

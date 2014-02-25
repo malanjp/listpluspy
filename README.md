@@ -19,38 +19,6 @@ Python >= 3.3.2
 
 ### Methods
 
-#### head
-
-```python
->>> l = List(range(1, 5))
->>> l.head()
-1
-```
-
-#### tail
-
-```python
->>> l = List(range(1, 5))
->>> l.tail()
-[2, 3, 4]
-```
-
-#### init
-
-```python
->>> l = List(range(1, 5))
->>> l.init()
-[1, 2, 3]
-```
-
-#### last
-
-```python
->>> l = List(range(1, 5))
->>> l.last()
-4
-```
-
 #### get
 
 ```python
@@ -80,11 +48,51 @@ False
 
 ### Properties
 
+#### head
+
+```python
+>>> l = List(range(1, 5))
+>>> l.head
+1
+```
+
+#### tail
+
+```python
+>>> l = List(range(1, 5))
+>>> l.tail
+[2, 3, 4]
+```
+
+#### init
+
+```python
+>>> l = List(range(1, 5))
+>>> l.init
+[1, 2, 3]
+```
+
+#### last
+
+```python
+>>> l = List(range(1, 5))
+>>> l.last
+4
+```
+
 #### length
 
 ```python
 >>> l = List([1, 2, 3, 4, 5])
 >>> print(l.length)
+5
+```
+
+#### size
+
+```python
+>>> l = List([1, 2, 3, 4, 5])
+>>> print(l.size)
 5
 ```
 
