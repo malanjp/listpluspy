@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 class List(list):
 
+    """
+    Methods
+    """
     def head(self):
         """
         >>> l = List(range(1, 5))
@@ -64,6 +67,24 @@ class List(list):
         self.__setitem__(idx1, self.__getitem__(idx2))
         self.__setitem__(idx2, tmp)
 
+    def forall(self, expr):
+        """
+        >>> l = List([1, 2, 3])
+        >>> l.forall('_ > 2')
+        False
+        >>> l.forall('_ > 0')
+        True
+        """
+        ifstr = '[_ for _ in {0} if {1}]'.format(self, expr)
+        result = eval(ifstr)
+        if len(result) == len(self):
+            return True
+        return False
+
+
+    """
+    Properties
+    """
     @property
     def length(self):
         """
@@ -75,8 +96,8 @@ class List(list):
         >>> l = List([x for x in range(0, generate_count)])
         >>> l.length == generate_count
         True
-        >>> l.length == generate_count
-        True
+        >>> l.length == -1
+        False
         """
         return len(self)
 
@@ -84,4 +105,5 @@ class List(list):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
+
 
