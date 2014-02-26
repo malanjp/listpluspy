@@ -80,6 +80,24 @@ class List(list):
         """
         return len(self)
 
+    @property
+    def min(self):
+        """
+        >>> l = List([1, 2, 3, 4, 5])
+        >>> print(l.min)
+        1
+        """
+        return min(self)
+
+    @property
+    def max(self):
+        """
+        >>> l = List([1, 2, 3, 4, 5])
+        >>> print(l.max)
+        5
+        """
+        return max(self)
+
 
 if __name__ == '__main__':
     import doctest
