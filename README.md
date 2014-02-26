@@ -49,7 +49,6 @@ False
 ### Properties
 
 #### head
-
 ```python
 >>> l = List(range(1, 5))
 >>> l.head
@@ -57,7 +56,6 @@ False
 ```
 
 #### tail
-
 ```python
 >>> l = List(range(1, 5))
 >>> l.tail
@@ -65,7 +63,6 @@ False
 ```
 
 #### init
-
 ```python
 >>> l = List(range(1, 5))
 >>> l.init
@@ -73,7 +70,6 @@ False
 ```
 
 #### last
-
 ```python
 >>> l = List(range(1, 5))
 >>> l.last
@@ -81,7 +77,6 @@ False
 ```
 
 #### length
-
 ```python
 >>> l = List([1, 2, 3, 4, 5])
 >>> print(l.length)
@@ -89,11 +84,23 @@ False
 ```
 
 #### size
-
 ```python
 >>> l = List([1, 2, 3, 4, 5])
 >>> print(l.size)
 5
 ```
 
+#### min
+```python
+>>> l = List([1, 2, 3, 4, 5])
+>>> print(l.min)
+1
+```
+
+#### max
+```python
+>>> l = List([1, 2, 3, 4, 5])
+>>> print(l.max)
+5
+```
 
