@@ -132,6 +132,21 @@ class List(list):
         """
         return self.length
 
+    @property
+    def isEmpty(self):
+        """
+        >>> l = List()
+        >>> print(l.isEmpty)
+        True
+        >>> l = List([])
+        >>> print(l.isEmpty)
+        True
+        >>> l = List([1])
+        >>> print(l.isEmpty)
+        False
+        """
+        return True if len(self) == 0 else False
+
 
 if __name__ == '__main__':
     import doctest

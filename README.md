@@ -96,4 +96,19 @@ False
 5
 ```
 
+#### size
+
+```python
+>>> l = List()
+>>> print(l.isEmpty)
+True
+>>> l = List([])
+>>> print(l.isEmpty)
+True
+>>> l = List([1])
+>>> print(l.isEmpty)
+False
+```
+
+
 
