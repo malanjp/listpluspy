@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+from functools import reduce
+
 class List(list):
 
     """
@@ -175,6 +177,20 @@ class List(list):
         0
         """
         return sum(self)
+
+    @property
+    def product(self):
+        """
+        >>> l = List([1,2,3])
+        >>> l.product
+        6
+        >>> l = List([])
+        >>> l.product
+        0
+        """
+        if len(self) < 1:
+            return 0
+        return reduce(lambda a, b: a * b, self)
 
 
 if __name__ == '__main__':

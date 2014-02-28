@@ -142,5 +142,14 @@ False
 0
 ```
 
+### product
+```python
+>>> l = List([1,2,3])
+>>> l.product
+9
+>>> l = List([])
+>>> l.product
+0
+```
 
 
