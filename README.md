@@ -83,6 +83,20 @@ False
 5
 ```
 
+#### min
+```python
+>>> l = List([1, 2, 3, 4, 5])
+>>> print(l.min)
+1
+```
+
+#### max
+```python
+>>> l = List([1, 2, 3, 4, 5])
+>>> print(l.max)
+5
+```
+
 #### size
 ```python
 >>> l = List([1, 2, 3, 4, 5])
@@ -104,17 +118,11 @@ True
 False
 ```
 
-#### min
+#### sorted
 ```python
->>> l = List([1, 2, 3, 4, 5])
->>> print(l.min)
-1
+>>> l = List([5, 4, 3, 2, 1])
+>>> print(l.sorted)
+[1, 2, 3, 4, 5]
 ```
 
-#### max
-```python
->>> l = List([1, 2, 3, 4, 5])
->>> print(l.max)
-5
-```
 

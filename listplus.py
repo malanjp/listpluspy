@@ -147,6 +147,15 @@ class List(list):
         """
         return True if len(self) == 0 else False
 
+    @property
+    def sorted(self):
+        """
+        >>> l = List([5, 4, 3, 2, 1])
+        >>> print(l.sorted)
+        [1, 2, 3, 4, 5]
+        """
+        self.sort()
+        return self
 
 if __name__ == '__main__':
     import doctest
