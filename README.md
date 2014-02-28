@@ -46,7 +46,7 @@ True
 False
 ```
 
-### contains
+#### contains
 
 ```python
 >>> l = List([1, 2, 3])
@@ -59,6 +59,16 @@ False
 True
 >>> l.contains('f')
 False
+```
+
+#### apply
+
+```python
+>>> l = List([1, 2, 3])
+>>> l.apply(2)
+3
+>>> l.apply(3) is None
+True
 ```
 
 ### Properties

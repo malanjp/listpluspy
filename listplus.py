@@ -62,6 +62,16 @@ class List(list):
         """
         return value in self
 
+    def apply(self, index):
+        """
+        >>> l = List([1, 2, 3])
+        >>> l.apply(2)
+        3
+        >>> l.apply(3) is None
+        True
+        """
+        return self.get(index, None)
+
 
     """
     Properties
