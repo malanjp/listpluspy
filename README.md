@@ -125,6 +125,12 @@ False
 [1, 2, 3, 4, 5]
 ```
 
+#### sorted
+```python
+>>> l = List([5, 4, 3, 2, 1])
+>>> print(l.reverse)
+[1, 2, 3, 4, 5]
+```
 
 ### sum
 ```python

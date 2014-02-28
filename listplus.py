@@ -154,6 +154,17 @@ class List(list):
         self.sort()
         return self
 
+    @property
+    def reverse(self):
+        """
+        >>> l = List([5, 4, 3, 2, 1])
+        >>> print(l.sorted)
+        [1, 2, 3, 4, 5]
+        """
+        self.reverse()
+        return self
+
+    @property
     def sum(self):
         """
         >>> l = List([1,2,3])
