@@ -135,9 +135,6 @@ class List(list):
     @property
     def isEmpty(self):
         """
-        >>> l = List()
-        >>> print(l.isEmpty)
-        True
         >>> l = List([])
         >>> print(l.isEmpty)
         True
@@ -156,6 +153,18 @@ class List(list):
         """
         self.sort()
         return self
+
+    def sum(self):
+        """
+        >>> l = List([1,2,3])
+        >>> l.sum
+        6
+        >>> l = List([])
+        >>> l.sum
+        0
+        """
+        return sum(self)
+
 
 if __name__ == '__main__':
     import doctest

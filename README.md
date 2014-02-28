@@ -13,7 +13,7 @@ Python >= 3.3.2
 ```python
 >>> from listplus import List
 >>> l = List(range(1, 5))
->>> l.head()
+>>> l.head
 1
 ```
 
@@ -124,5 +124,17 @@ False
 >>> print(l.sorted)
 [1, 2, 3, 4, 5]
 ```
+
+
+### sum
+```python
+>>> l = List([1,2,3])
+>>> l.sum
+6
+>>> l = List([])
+>>> l.sum
+0
+```
+
 
 
