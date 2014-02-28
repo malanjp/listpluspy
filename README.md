@@ -46,6 +46,21 @@ True
 False
 ```
 
+### contains
+
+```python
+>>> l = List([1, 2, 3])
+>>> l.contains(2)
+True
+>>> l.contains(5)
+False
+>>> l = List(['a', 'b', 'c'])
+>>> l.contains('b')
+True
+>>> l.contains('f')
+False
+```
+
 ### Properties
 
 #### head

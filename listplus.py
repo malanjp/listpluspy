@@ -47,6 +47,21 @@ class List(list):
             return True
         return False
 
+    def contains(self, value):
+        """
+        >>> l = List([1, 2, 3])
+        >>> l.contains(2)
+        True
+        >>> l.contains(5)
+        False
+        >>> l = List(['a', 'b', 'c'])
+        >>> l.contains('b')
+        True
+        >>> l.contains('f')
+        False
+        """
+        return value in self
+
 
     """
     Properties
