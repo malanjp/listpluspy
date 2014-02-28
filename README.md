@@ -118,3 +118,15 @@ False
 5
 ```
 
+### sum
+```python
+>>> l = List([1,2,3])
+>>> l.sum
+6
+>>> l = List([])
+>>> l.sum
+0
+```
+
+
+
