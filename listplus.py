@@ -73,6 +73,20 @@ class List(list):
         return self.get(index, None)
 
 
+    def take(self, count):
+        """
+        >>> l = List([1, 2, 3])
+        >>> l.take(2)
+        [1, 2]
+        >>> l.take(3)
+        [1, 2, 3]
+        >>> l.take(4)
+        [1, 2, 3]
+        """
+        return self[:count]
+
+
+
     """
     Properties
     """

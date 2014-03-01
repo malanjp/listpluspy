@@ -71,6 +71,18 @@ False
 True
 ```
 
+#### take
+
+```python
+>>> l = List([1, 2, 3])
+>>> l.take(2)
+[1, 2]
+>>> l.take(3)
+[1, 2, 3]
+>>> l.take(4)
+[1, 2, 3]
+```
+
 ### Properties
 
 #### head
