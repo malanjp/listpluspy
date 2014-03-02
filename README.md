@@ -19,7 +19,7 @@ Python >= 3.3.2
 
 ### Methods
 
-#### get
+#### get(index)
 
 ```python
 >>> l = List(range(1, 5))
@@ -27,7 +27,7 @@ Python >= 3.3.2
 2
 ```
 
-#### swap
+#### swap(index, moveto)
 
 ```python
 >>> l = List(['a', 'b', 'c'])
@@ -36,7 +36,7 @@ Python >= 3.3.2
 ['c', 'b', 'a']
  ```
 
-#### forall
+#### forall(expr)
 
 ```python
 >>> l = List(range(1, 5))
@@ -46,7 +46,7 @@ True
 False
 ```
 
-#### contains
+#### contains(value)
 
 ```python
 >>> l = List([1, 2, 3])
@@ -61,7 +61,7 @@ True
 False
 ```
 
-#### apply
+#### apply(index)
 
 ```python
 >>> l = List([1, 2, 3])
@@ -71,7 +71,7 @@ False
 True
 ```
 
-#### take
+#### take(count)
 
 ```python
 >>> l = List([1, 2, 3])
@@ -83,7 +83,7 @@ True
 [1, 2, 3]
 ```
 
-#### takeRight
+#### takeRight(count)
 
 ```python
 >>> l = List([1, 2, 3])
@@ -95,7 +95,7 @@ True
 [1, 2, 3]
 ```
 
-### drop
+### drop(count)
 
 ```python
 >>> l = List([1, 2, 3, 4, 5])
@@ -103,7 +103,7 @@ True
 [3, 4, 5]
 ```
 
-### dropRight
+### dropRight(count)
 
 ```python
 >>> l = List([1, 2, 3, 4, 5])
