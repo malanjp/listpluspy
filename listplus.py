@@ -83,7 +83,7 @@ class List(list):
         >>> l.take(4)
         [1, 2, 3]
         """
-        return self[:count]
+        return List(self[:count])
 
     def drop(self, count):
         """
@@ -94,7 +94,7 @@ class List(list):
         >>> l.drop(3)
         ['d', 'e']
         """
-        return self[count:]
+        return List(self[count:])
 
 
     """
