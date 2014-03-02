@@ -200,7 +200,7 @@ False
 [1, 2, 3, 4, 5]
 ```
 
-### sum
+#### sum
 ```python
 >>> l = List([1,2,3])
 >>> l.sum
@@ -210,7 +210,7 @@ False
 0
 ```
 
-### product
+#### product
 ```python
 >>> l = List([1,2,3])
 >>> l.product
