@@ -72,7 +72,6 @@ class List(list):
         """
         return self.get(index, None)
 
-
     def take(self, count):
         """
         >>> l = List([1, 2, 3])
@@ -84,6 +83,18 @@ class List(list):
         [1, 2, 3]
         """
         return List(self[:count])
+
+    def takeRight(self, count):
+        """
+        >>> l = List([1, 2, 3])
+        >>> l.takeRight(2)
+        [2, 3]
+        >>> l.takeRight(3)
+        [1, 2, 3]
+        >>> l.takeRight(4)
+        [1, 2, 3]
+        """
+        return List(self[-count:])
 
     def drop(self, count):
         """
