@@ -96,6 +96,17 @@ class List(list):
         """
         return List(self[count:])
 
+    def dropRight(self, count):
+        """
+        >>> l = List([1, 2, 3, 4, 5])
+        >>> l.dropRight(2)
+        [1, 2, 3]
+        >>> l = List(['a', 'b', 'c', 'd', 'e'])
+        >>> l.dropRight(3)
+        ['a', 'b']
+        """
+        return List(self[:-count])
+
 
     """
     Properties

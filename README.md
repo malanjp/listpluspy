@@ -91,6 +91,17 @@ True
 [3, 4, 5]
 ```
 
+### dropRight
+
+```python
+>>> l = List([1, 2, 3, 4, 5])
+>>> l.dropRight(2)
+[1, 2, 3]
+>>> l = List(['a', 'b', 'c', 'd', 'e'])
+>>> l.dropRight(3)
+['a', 'b']
+```
+
 ### Properties
 
 #### head
