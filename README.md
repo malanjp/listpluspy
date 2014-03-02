@@ -83,6 +83,18 @@ True
 [1, 2, 3]
 ```
 
+#### takeRight
+
+```python
+>>> l = List([1, 2, 3])
+>>> l.takeRight(2)
+[2, 3]
+>>> l.takeRight(3)
+[1, 2, 3]
+>>> l.takeRight(4)
+[1, 2, 3]
+```
+
 ### drop
 
 ```python
