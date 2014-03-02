@@ -83,6 +83,14 @@ True
 [1, 2, 3]
 ```
 
+### drop
+
+```python
+>>> l = List([1, 2, 3, 4, 5])
+>>> l.drop(2)
+[3, 4, 5]
+```
+
 ### Properties
 
 #### head

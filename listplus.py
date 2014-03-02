@@ -85,6 +85,16 @@ class List(list):
         """
         return self[:count]
 
+    def drop(self, count):
+        """
+        >>> l = List([1, 2, 3, 4, 5])
+        >>> l.drop(2)
+        [3, 4, 5]
+        >>> l = List(['a', 'b', 'c', 'd', 'e'])
+        >>> l.drop(3)
+        ['d', 'e']
+        """
+        return self[count:]
 
 
     """
