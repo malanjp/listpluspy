@@ -224,8 +224,7 @@ class List(list):
         >>> print(l.sorted)
         [1, 2, 3, 4, 5]
         """
-        self.sort()
-        return self
+        return sorted(self)
 
     @property
     def reverse(self):
@@ -234,8 +233,7 @@ class List(list):
         >>> print(l.sorted)
         [1, 2, 3, 4, 5]
         """
-        self.reverse()
-        return self
+        return reversed(self)
 
     @property
     def sum(self):
